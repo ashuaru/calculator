@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>javascript calculator</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+    <body>
+        <h1> Calculator Program</h1> 
+         <div class= "formstyle">
+         <form name = "form1">
+         <input class= "textview" name = "textview">
+         </form>
+         <center>
+         <table>
+         <tr> 
+            <td> <input class = "btn" type = "button" value = "C" onclick = "form1.textview.value = ' ' " > </td>
+            <td> <input  class = "btn" type = "button" value = "B" onclick = "backspace()" > </td>
+            <td> <input  class = "btn" type = "button" value = "/" onclick = "operate('/')" > </td>
+            <td> <input class = "btn" type = "button" value = "x" onclick = "operate('*')" > </td>
+            </tr>
+            
+             <tr> 
+            <td> <input class = "btn" type = "button" value = "7" onclick = "operate(7)" > </td>
+            <td> <input class = "btn" type = "button" value = "8" onclick = "operate(8)" > </td>
+            <td> <input class = "btn" type = "button" value = "9" onclick = "operate(9)" > </td>
+            <td> <input class = "btn" type = "button" value = "-" onclick = "operate('-')" > </td>
+            </tr>
+            
+             <tr> 
+            <td> <input class = "btn" type = "button" value = "4" onclick = "operate(4)" > </td>
+            <td> <input class = "btn" type = "button" value = "5" onclick = "operate(5)" > </td>
+            <td> <input class = "btn" type = "button" value = "6" onclick = "operate(6)" > </td>
+            <td> <input class = "btn" type = "button" value = "+" onclick = "operate('+')" > </td>
+            </tr>
+            
+             <tr> 
+            <td> <input class = "btn" type = "button" value = "1" onclick = "operate(1)" > </td>
+            <td> <input class = "btn" type = "button" value = "2" onclick = "operate(2)" > </td>
+            <td> <input class = "btn" type = "button" value = "3" onclick = "operate(3)" > </td>
+            <td rowspan = 5> <input class = "btn" style = "height: 110px" type = "button" value = "=" onclick = "equal()"> </td>
+            </tr>
+            <tr>
+            <td colspan = 2> <input class = "btn" style = "width: 106px" type = "button" value = "0" onclick = "operate(0)" > </td>
+            <td> <input class = "btn" type = "button" value = "." onclick = "operate('.')"> </td>
+            </tr>
+            </table>
+            </center>
+         </div>
+         </body>
+         
+</html>
