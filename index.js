@@ -1,21 +1,21 @@
 function operate(num)   
 {  
-document.form1.textview.value = document.form1.textview.value + num;  
+document.form1.text.value = document.form1.text.value + num;  
 }  
   
  
 function equal()  
 {  
-var exp = document.form1.textview.value;  
+var exp = document.form1.text.value;  
 if(exp)  
 {  
-document.form1.textview.value = eval(exp)  
+document.form1.text.value = eval(exp)  
 }  
 }  
   
 
 function backspace()  
 {  
-var exp = document.form1.textview.value;  
-document.form1.textview.value = exp.substring(0, exp.length - 1); 
+var exp = document.form1.text.value;  
+document.form1.text.value = exp.substring(0, exp.length - 1); 
 }  
